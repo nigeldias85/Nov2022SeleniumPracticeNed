@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Regression Suite" verbose="4" thread-count="3" parallel="tests">
+
+	<test name="OpenCartHomePageTest">
+		<parameter name="url" value="https://naveenautomationlabs.com/opencart/" />
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="testngsessions.OpenCartHomePageTest" />
+		</classes>
+	</test>
+	<test name="OpenCartLoginPageSectionsTest">
+		<parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/login" />
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="testngsessions.OpenCartLoginPageSectionsTest" />
+		</classes>
+	</test>
+</suite>
